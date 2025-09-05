@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Rugs - Luxury Handcrafted Carpet Collection | Premium E-Commerce</title>
+    <link rel="stylesheet" href="style_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Shop the world's finest handcrafted interior rugs. Browse luxury collections, filter by material & style, view detailed specifications, and customize your perfect carpet.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="luxury-navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="brand-title">Interior Rugs</h1>
+                <span class="brand-tagline">Where Heritage Meets Modern Luxury</span>
+            </div>
+            
+            <div class="nav-center">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search luxury rugs..." id="searchInput">
+                    <button class="search-btn" id="searchBtn">
+                        <span class="search-icon">🔍</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-icon-btn" id="wishlistBtn">
+                    <span class="icon">♡</span>
+                    <span class="count" id="wishlistCount">0</span>
+                </button>
+                <button class="nav-icon-btn" id="compareBtn">
+                    <span class="icon">⚖</span>
+                    <span class="count" id="compareCount">0</span>
+                </button>
+                <button class="nav-icon-btn" id="cartBtn">
+                    <span class="icon">🛒</span>
+                    <span class="count" id="cartCount">0</span>
+                </button>
+                <button class="luxury-btn btn-primary" id="consultationBtn">
+                    <span class="btn-text">Consultation</span>
+                </button>
+            </div>
+
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Discover Luxury<br>Handcrafted Rugs</h1>
+                <p class="hero-subtitle">Explore our exclusive collection of premium interior rugs, featuring traditional craftsmanship and contemporary designs from master artisans worldwide.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">28+</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Master Artisans</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">Countries Served</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="luxury-btn btn-primary" id="shopNowBtn">
+                        <span class="btn-text">Shop Collection</span>
+                    </button>
+                    <button class="luxury-btn btn-secondary" id="viewCategoriesBtn">
+                        <span class="btn-text">Browse Categories</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/2580426/pexels-photo-2580426.jpeg" alt="Luxury Persian Rug" class="hero-rug">
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions Section -->
+    <section class="value-propositions-section">
+        <div class="container">
+            <div class="value-props-grid">
+                <div class="value-prop-card">
+                    <div class="value-prop-icon">🎨</div>
+                    <h3 class="value-prop-title">Free Design Consultation</h3>
+                    <p class="value-prop-description">Personal consultation with our design experts for orders above ₹3,00,000</p>
+                </div>
+                <div class="value-prop-card">
+                    <div class="value-prop-icon">🛡️</div>
+                    <h3 class="value-prop-title">Lifetime Quality Guarantee</h3>
+                    <p class="value-prop-description">We stand behind our craftsmanship with comprehensive warranties</p>
+                </div>
+                <div class="value-prop-card">
+                    <div class="value-prop-icon">🚛</div>
+                    <h3 class="value-prop-title">White Glove Delivery</h3>
+                    <p class="value-prop-description">Professional installation and setup service worldwide</p>
+                </div>
+                <div class="value-prop-card">
+                    <div class="value-prop-icon">♻️</div>
+                    <h3 class="value-prop-title">Sustainable Practices</h3>
+                    <p class="value-prop-description">Eco-friendly materials and ethical sourcing practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Discover our curated collections of luxury rugs for every space</p>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Story Section -->
+    <section class="heritage-section">
+        <div class="container">
+            <div class="heritage-content">
+                <div class="heritage-text">
+                    <div class="section-tag">Since 1985</div>
+                    <h2 class="section-title">A Legacy of Craftsmanship</h2>
+                    <p class="heritage-description">For over four decades, Interior Rugs has been at the forefront of luxury carpet craftsmanship. Founded in Mumbai in 1985, we began our journey with a simple mission: to preserve the ancient art of hand-weaving while creating contemporary masterpieces that define modern luxury.</p>
+                    <p class="heritage-description">Our master artisans, many of whom represent generations of weaving families, work with the finest materials sourced from around the world. Each rug tells a story of dedication, skill, and passion that has been passed down through centuries.</p>
+                    <div class="heritage-stats">
+                        <div class="heritage-stat">
+                            <span class="stat-number">1985</span>
+                            <span class="stat-label">Founded</span>
+                        </div>
+                        <div class="heritage-stat">
+                            <span class="stat-number">4th</span>
+                            <span class="stat-label">Generation Artisans</span>
+                        </div>
+                        <div class="heritage-stat">
+                            <span class="stat-number">UNESCO</span>
+                            <span class="stat-label">Heritage Recognition</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="heritage-image">
+                    <img src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&h=600&fit=crop" alt="Master Artisan at Work" class="heritage-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Craftsmanship Process</h2>
+                <p class="section-subtitle">From consultation to delivery, experience our meticulous attention to detail</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Consultation</h3>
+                        <p class="step-description">Share your vision with our design experts and explore our collections</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Design & Selection</h3>
+                        <p class="step-description">Choose from existing designs or create a completely custom piece</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Handcrafted Creation</h3>
+                        <p class="step-description">Master artisans bring your rug to life using traditional techniques</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Quality & Delivery</h3>
+                        <p class="step-description">Rigorous quality checks followed by white-glove delivery service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="products-header">
+                <div class="products-title">
+                    <h2 class="section-title">Featured Collection</h2>
+                    <p class="products-count" id="productsCount">8 premium rugs</p>
+                </div>
+                
+                <div class="products-controls">
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid">⊞</button>
+                        <button class="view-btn" data-view="list">☰</button>
+                    </div>
+                    
+                    <div class="sort-controls">
+                        <select class="form-control" id="sortSelect">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                    
+                    <button class="luxury-btn btn-secondary" id="filtersToggle">
+                        <span class="btn-text">Filters</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="products-content">
+                <div class="filters-sidebar" id="filtersSidebar">
+                    <div class="filters-header">
+                        <h3>Filter Products</h3>
+                        <button class="filters-close" id="filtersClose">×</button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-title">Price Range</h4>
+                        <div class="filter-options" id="priceFilters">
+                            <!-- Price filters will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-title">Materials</h4>
+                        <div class="filter-options" id="materialFilters">
+                            <!-- Material filters will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-title">Techniques</h4>
+                        <div class="filter-options" id="techniqueFilters">
+                            <!-- Technique filters will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-title">Sizes</h4>
+                        <div class="filter-options" id="sizeFilters">
+                            <!-- Size filters will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="filter-actions">
+                        <button class="luxury-btn btn-primary" id="applyFilters">Apply Filters</button>
+                        <button class="luxury-btn btn-secondary" id="clearFilters">Clear All</button>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Discover why thousands trust Interior Rugs for their luxury home needs</p>
+            </div>
+            
+            <div class="testimonials-carousel" id="testimonialsCarousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"The craftsmanship is absolutely extraordinary. Our Persian rug has become the centerpiece of our living room, and guests consistently compliment its beauty and quality."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Rajesh Sharma" class="author-image">
+                            <div class="author-info">
+                                <div class="author-name">Rajesh Sharma</div>
+                                <div class="author-location">Mumbai, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"Interior Rugs delivered beyond our expectations. The design consultation was invaluable, and the final product perfectly complemented our contemporary home design."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b77c?w=80&h=80&fit=crop&crop=face" alt="Priya Mehta" class="author-image">
+                            <div class="author-info">
+                                <div class="author-name">Priya Mehta</div>
+                                <div class="author-location">Delhi, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"The attention to detail and customer service is unmatched. Our custom rug was delivered exactly as promised, and the quality is museum-grade."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Arjun Patel" class="author-image">
+                            <div class="author-info">
+                                <div class="author-name">Arjun Patel</div>
+                                <div class="author-location">Bangalore, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" id="testimonialsPrev">‹</button>
+                <div class="carousel-dots" id="testimonialsDots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="carousel-btn next" id="testimonialsNext">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Awards & Recognition</h2>
+                <p class="section-subtitle">Celebrating our commitment to excellence and craftsmanship</p>
+            </div>
+            
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">🏆</div>
+                    <h3 class="award-title">UNESCO Heritage Craft Recognition</h3>
+                    <div class="award-year">2023</div>
+                    <p class="award-description">For preserving traditional weaving techniques</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🌟</div>
+                    <h3 class="award-title">International Luxury Goods Award</h3>
+                    <div class="award-year">2022</div>
+                    <p class="award-description">Excellence in luxury home furnishings</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🌱</div>
+                    <h3 class="award-title">Sustainable Luxury Practices</h3>
+                    <div class="award-year">2024</div>
+                    <p class="award-description">Environmental responsibility recognition</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🇮🇳</div>
+                    <h3 class="award-title">Export Excellence Award</h3>
+                    <div class="award-year">2023</div>
+                    <p class="award-description">Government of India recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Services</h2>
+                <p class="section-subtitle">Enhance your luxury rug experience with our exclusive services</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">AR Room Placement</h3>
+                    <p class="service-description">See how your chosen rug looks in your actual room using AR technology</p>
+                    <div class="service-availability">Available on mobile app</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Virtual Design Consultation</h3>
+                    <p class="service-description">Personal consultation with our design experts via video call</p>
+                    <div class="service-price">Free with purchase above ₹3,00,000</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧵</div>
+                    <h3 class="service-title">Material Samples</h3>
+                    <p class="service-description">Request physical samples of materials and colors</p>
+                    <div class="service-price">₹2,500 (refundable with purchase)</div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📏</div>
+                    <h3 class="service-title">Custom Size Service</h3>
+                    <p class="service-description">Any rug can be made in custom dimensions</p>
+                    <div class="service-price">15-25% premium depending on size</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Stay Connected with Luxury</h2>
+                    <p class="newsletter-subtitle">Get exclusive access to new collections, design tips, and special offers</p>
+                    <div class="newsletter-benefits">
+                        <div class="benefit">✓ First access to new collections</div>
+                        <div class="benefit">✓ Exclusive member discounts</div>
+                        <div class="benefit">✓ Interior design inspiration</div>
+                        <div class="benefit">✓ Expert care tips</div>
+                    </div>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Enter your email address" required>
+                        </div>
+                        <button type="submit" class="luxury-btn btn-primary newsletter-btn">
+                            <span class="btn-text">Subscribe Now</span>
+                        </button>
+                    </form>
+                    <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-section">
+                        <div class="footer-brand">
+                            <h3 class="footer-brand-title">Interior Rugs</h3>
+                            <p class="footer-brand-tagline">Where Heritage Meets Modern Luxury</p>
+                        </div>
+                        <p class="footer-description">For over four decades, Interior Rugs has been crafting luxury carpets that define elegance and sophistication. Each piece tells a story of tradition, quality, and timeless beauty.</p>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Jallapur, Bhadohi, India</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>+91-700-7121-425</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span>info@interiorrugs.in</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Links -->
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">About Interior Rugs</h4>
+                        <ul class="footer-links">
+                            <li><a href="#story">Our Story</a></li>
+                            <li><a href="#heritage">Heritage & Craftsmanship</a></li>
+                            <li><a href="#artisans">Master Artisans</a></li>
+                            <li><a href="#awards">Awards & Recognition</a></li>
+                            <li><a href="#press">Press & Media</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Collections -->
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Collections</h4>
+                        <ul class="footer-links">
+                            <li><a href="#living-room">Living Room Rugs</a></li>
+                            <li><a href="#bedroom">Bedroom Rugs</a></li>
+                            <li><a href="#dining-room">Dining Room Rugs</a></li>
+                            <li><a href="#outdoor">Outdoor Rugs</a></li>
+                            <li><a href="#new">New Arrivals</a></li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <!-- Customer Care -->
+                    <div class="footer-section">
+                        <h4 class="footer-section-title">Customer Care</h4>
+                        <ul class="footer-links">
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#size-guide">Size Guide</a></li>
+                            <li><a href="#shipping">Shipping Information</a></li>
+                            <li><a href="#returns">Returns & Exchanges</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <!-- Payment & Security -->
+                    <div class="footer-payments">
+                        <div class="payment-methods">
+                            <span class="payment-label">We Accept:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon" title="Visa">💳</span>
+                                <span class="payment-icon" title="PayPal">💰</span>
+                                <span class="payment-icon" title="Bank Transfer">🏦</span>
+                                <span class="payment-icon" title="UPI">📱</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Legal Links -->
+                    <div class="footer-legal">
+                        <div class="legal-links">
+                            <a href="#privacy">Privacy Policy</a>
+                            <a href="#terms">Terms of Service</a>
+                            <a href="#return-policy">Return Policy</a>
+                            <a href="#shipping-policy">Shipping Policy</a>
+                            <a href="#cookies">Cookie Policy</a>
+                        </div>
+                        <div class="copyright">
+                            <p>&copy; 2024 Interior Rugs. All rights reserved by our prestigious team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top -->
+        <button class="back-to-top" id="backToTop">
+            <span>↑</span>
+        </button>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal hidden" id="productModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            
+            <div class="product-detail">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="" alt="">
+                        <button class="zoom-btn" id="zoomBtn">🔍</button>
+                    </div>
+                    <div class="image-thumbnails" id="imageThumbnails">
+                        <!-- Thumbnails will be populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1 class="product-name" id="modalProductName"></h1>
+                    <div class="product-rating" id="modalProductRating">
+                        <div class="stars"></div>
+                        <span class="reviews-count"></span>
+                    </div>
+                    
+                    <div class="product-price" id="modalProductPrice">
+                        <span class="current-price"></span>
+                        <span class="sale-price"></span>
+                    </div>
+                    
+                    <div class="product-description" id="modalProductDescription"></div>
+                    
+                    <div class="product-features" id="modalProductFeatures">
+                        <!-- Features will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="product-specifications">
+                        <h3>Specifications</h3>
+                        <div class="specs-grid" id="modalProductSpecs">
+                            <!-- Specs will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="size-selection">
+                        <h3>Size Options</h3>
+                        <div class="size-options" id="modalSizeOptions">
+                            <!-- Size options will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="luxury-btn btn-primary" id="addToCartBtn">
+                            <span class="btn-text">Add to Cart</span>
+                        </button>
+                        <button class="luxury-btn btn-secondary" id="addToWishlistBtn">
+                            <span class="btn-text">Add to Wishlist</span>
+                        </button>
+                        <button class="luxury-btn btn-outline" id="addToCompareBtn">
+                            <span class="btn-text">Compare</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal hidden" id="cartModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <button class="modal-close" id="cartModalClose">×</button>
+            </div>
+            
+            <div class="cart-content" id="cartContent">
+                <div class="cart-empty" id="cartEmpty">
+                    <div class="empty-icon">🛒</div>
+                    <h3>Your cart is empty</h3>
+                    <p>Discover our luxury rug collections and add items to your cart</p>
+                    <button class="luxury-btn btn-primary" id="shopNowFromCart">Shop Now</button>
+                </div>
+                
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be populated by JavaScript -->
+                </div>
+                
+                <div class="cart-summary" id="cartSummary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="cartSubtotal">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="cartShipping">Free</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="cartTotal">₹0</span>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <button class="luxury-btn btn-primary" id="checkoutBtn">
+                            <span class="btn-text">Proceed to Checkout</span>
+                        </button>
+                        <button class="luxury-btn btn-secondary" id="continueShoppingBtn">
+                            <span class="btn-text">Continue Shopping</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal hidden" id="wishlistModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>My Wishlist</h2>
+                <button class="modal-close" id="wishlistModalClose">×</button>
+            </div>
+            
+            <div class="wishlist-content" id="wishlistContent">
+                <div class="wishlist-empty" id="wishlistEmpty">
+                    <div class="empty-icon">♡</div>
+                    <h3>Your wishlist is empty</h3>
+                    <p>Save your favorite rugs for later by clicking the heart icon</p>
+                </div>
+                
+                <div class="wishlist-items" id="wishlistItems">
+                    <!-- Wishlist items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare Modal -->
+    <div class="modal hidden" id="compareModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Compare Products</h2>
+                <button class="modal-close" id="compareModalClose">×</button>
+            </div>
+            
+            <div class="compare-content" id="compareContent">
+                <div class="compare-empty" id="compareEmpty">
+                    <div class="empty-icon">⚖</div>
+                    <h3>No products to compare</h3>
+                    <p>Add products to compare their specifications and features</p>
+                </div>
+                
+                <div class="compare-table" id="compareTable">
+                    <!-- Comparison table will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notifications"></div>
+
+    <script src="app_1.js"></script>
+</body>
+</html>
