@@ -1450,29 +1450,9 @@ class InteriorRugsApp {
         const notification = document.createElement('div');
         notification.className = `notification ${type}`;
         
-        notification.innerHTML = `
-            <div class="notification-content">
-                <div>${message}</div>
-                <button class="notification-close">&times;</button>
-            </div>
-        `;
+        
 
-        notifications.appendChild(notification);
-
-        // Show notification
-        setTimeout(() => {
-            notification.classList.add('show');
-        }, 100);
-
-        // Auto-hide after 5 seconds
-        setTimeout(() => {
-            this.hideNotification(notification);
-        }, 5000);
-
-        // Manual close
-        notification.querySelector('.notification-close').addEventListener('click', () => {
-            this.hideNotification(notification);
-        });
+       
     }
 
     hideNotification(notification) {
@@ -1520,4 +1500,3 @@ document.addEventListener('DOMContentLoaded', () => {
     interiorRugsApp.renderFilters();
 });
 
-console.log('Interior Rugs Complete E-Commerce Application Loaded Successfully!');
